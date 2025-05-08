@@ -59,23 +59,23 @@ class FlightDataValidator:
     
     def validate_values(self):
         """Validações específicas de valores"""
-        # Valores não negativos
+        
         if (self.df['flight_duration'] < 0).any():
             self._add_error("Duração de voo negativa encontrada")
         
-        # Status válidos
+        
         valid_status = ['on_time', 'delayed', 'canceled', 'diverted', 'overbooked']
         invalid_status = ~self.df['status'].isin(valid_status)
         if invalid_status.any():
             self._add_error(f"Status inválidos encontrados: {self.df[invalid_status]['status'].unique()}")
             
-        # IDs únicos
+        
         if self.df['flight_id'].duplicated().any():
             self._add_error("IDs de voo duplicados encontrados")
     
     def validate_temporal_logic(self):
         """Valida a lógica temporal"""
-        # Voos cancelados não devem ter horário de chegada
+        
         canceled_with_arrival = self.df[(self.df['status'] == 'canceled') & 
                                        (self.df['actual_arrival'].notna())]
         if len(canceled_with_arrival) > 0:
