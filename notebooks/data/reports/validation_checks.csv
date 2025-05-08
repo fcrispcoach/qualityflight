@@ -1,0 +1,2 @@
+0,1
+Valores nulos,"{'flight_id': 0, 'airline': 0, 'origin': 0, 'destination': 0, 'aircraft': 0, 'departure_time': 0, 'scheduled_arrival': 0, 'actual_arrival': 197, 'flight_duration': 0, 'status': 0, 'delay_minutes': 0, 'cancellation_reason': 4803, 'passengers': 0, 'fuel_consumption': 0}"

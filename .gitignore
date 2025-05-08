@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv/
+ENV/
+
+# Python cache and other files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other common excludes
+.DS_Store
+.idea/
+*.log
+*.pot
+*.pyc
+.*env
+/bin
+/include
+/lib
+/lib64

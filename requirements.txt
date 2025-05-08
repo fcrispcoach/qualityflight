@@ -1,0 +1,25 @@
+# Validação de Dados
+great-expectations==0.17.19
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Geração de Dados Falsos
+faker>=18.0.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+imbalanced-learn>=0.10.0  # Para tratamento de dados desbalanceados (opcional)
+xgboost>=1.7.0  # Alternativa aos modelos do scikit-learn (opcional)
+
+# Análise com LLM
+openai>=0.28.0  # Para integração com GPT-4/3.5
+python-dotenv>=1.0.0  # Para gerenciar API keys
+
+# Visualização
+matplotlib>=3.6.0
+seaborn>=0.12.0
+plotly>=5.10.0  # Para visualizações interativas (opcional)
+
+# Processamento de Dados
+python-dateutil>=2.8.0  # Para manipulação de datas
+pydantic>=1.10.0  # Para validação de modelos de dados (opcional)

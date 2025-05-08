@@ -1,0 +1,31 @@
+{
+  "checks": [
+    "Coluna flight_id v\u00e1lida",
+    "Coluna airline v\u00e1lida",
+    "Coluna origin v\u00e1lida",
+    "Coluna destination v\u00e1lida",
+    "Coluna status v\u00e1lida",
+    "Coluna flight_duration v\u00e1lida"
+  ],
+  "errors": [
+    "IDs de voo duplicados encontrados",
+    "Dura\u00e7\u00f5es inv\u00e1lidas encontradas: 130",
+    "Origens inv\u00e1lidas encontradas: 141"
+  ],
+  "warnings": [
+    "Tipo incorreto para delay_minutes. Esperado: float64, Encontrado: int64"
+  ],
+  "stats": {
+    "total_flights": 5000,
+    "problem_flights": 980,
+    "problem_rate": 0.196,
+    "avg_delay": 221.0771144278607,
+    "max_delay": 478.0,
+    "cancellation_reasons": {
+      "air_traffic": 64,
+      "weather": 50,
+      "crew": 45,
+      "mechanical": 38
+    }
+  }
+}
